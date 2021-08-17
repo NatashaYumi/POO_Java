@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Java EE - Servlets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 style="color:blueviolet">JavaEE</h1>
+        <h2>Conteúdo estático</h2>
+        <h3><a href="page2.html">Página 2</a></h3>
+        <h3><a href="folder/page3.html">Página 3</a></h3>
+        <!-- 
+        Neste trecho é demonstrado a interação dinâmica com o usuário 
+        em uma página estática.
+        -->
+        <script>var contador=1;</script>
+        <button onclick="alert(contador++)">Mostrar contador</button>
+        <p></p>
+        <hr>
+        <h2>Servlets </h2>
+        <h3><a href="date-time.html">Data/Hora do servidor</a></h3>
+        <h3><a href="greeting/hi.html">Saudação</a></h3>
+        <h3><a href="random.html">Números aleatórios</a></h3>
+        <h3>Tabuada</h3>
+        <form action="multiplication-table.html">
+            <input type="number" name="n" value="">
+            <input type="submit" value="Calcular tabuada"/>
+        </form>
+        <h3>Soma</h3>
+         <form action="sum.html">
+            <input type="number" name="n1" step="0.01" value="1">+
+            <input type="number" name="n2" step="0.01"value="1">
+            <input type="submit" value="Somar"/>
+        </form>
+    </body>
+</html>
