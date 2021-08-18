@@ -53,7 +53,7 @@ public class NatashaServlet extends HttpServlet {
             out.println("<dt><h4><a href='https://github.com/natashayumi'>GitHub/natashayumi</a></h4></dt>");
             out.println("<dd><a href='https://github.com/NatashaYumi/POO_Java/tree/main/Aula02HelloWorld'>Aula02HelloWorld</a></dd>");
             out.println("<dd><a href='https://github.com/NatashaYumi/POO_Java/tree/main/Aula03JavaEEServlets'>Aula03JavaEEServlets</a></dd>");
-            out.println("<dd><a href='https://github.com/natashayumi'></a></dd>");
+            out.println("<dd><a href='https://github.com/NatashaYumi/POO_Java/tree/main/ProjetoMathServlet3.2'>ProjetoMathServlet3.2</a></dd>");
             out.println("</dl>");
             out.println("</body>");
             out.println("</html>");
