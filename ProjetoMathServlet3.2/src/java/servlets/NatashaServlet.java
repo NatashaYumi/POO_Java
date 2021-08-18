@@ -45,9 +45,9 @@ public class NatashaServlet extends HttpServlet {
             out.println("<a href='index.html'>Voltar</a>");
             out.println("<hr>");
             out.println("<h3><label for='name'>Nome:</label></h3>");
-            out.println("<input type='text' id='name' size='50' value='Natasha Yumi Nakayama de Almeida' readonly/>");
+            out.println("<input type='text' id='name' size='50' value='Natasha Yumi Nakayama de Almeida' disabled/>");
             out.println("<h3><label for='matricula'>Matrícula:</label></h3>");
-            out.println("<input type='text' id='name' size='15' value='1290482012039' readonly/>");
+            out.println("<input type='text' id='name' size='15' value='1290482012039' disabled/>");
             out.println("<h3><img src='Octocat.png' width = 3%> GitHub </h3>");
             out.println("<dl>");
             out.println("<dt><h4><a href='https://github.com/natashayumi'>GitHub/natashayumi</a></h4></dt>");

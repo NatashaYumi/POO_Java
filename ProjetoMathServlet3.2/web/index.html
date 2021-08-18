@@ -16,14 +16,13 @@ and open the template in the editor.
         <h2><a href="natasha.html"> Servlet Natasha</a></h2>
         <h2>Servlet Math</h2>
         <form action="math.html">
-            <input type="number" name="n1" value="" placeholder="Informe um valor">
-            <input list="operacao" name="op" size="2" placeholder="Selecione...">
-                <datalist id="operacao">
-                <option value="-">
-                <option value="+">
-                <option value="/">
-                <option value="*">
-                </datalist>
+            <input type="number" name="n1" value="" placeholder="Informe um valor" >
+            <select name="op" id="op">
+                <option value="-">-</option>
+                <option value="+">+</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+                </select>
             <input type="number" name="n2" value="" placeholder="Informe outro valor">
             <input type="submit" value="Calcular"/>
         </form>
