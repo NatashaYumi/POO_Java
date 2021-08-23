@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!--
+4.1 - Portal de cálculo de juros
+Vence hoje às 18:30
+Instruções
+Crie um projeto de aplicação web em Java utilizando o NetBeans com os seguintes 
+requisitos:
+
+Uma página inicial chamada index.html com seu nome e número de matrícula, 
+além de dois formulários distintos com entradas para valor presente, 
+juros (em %) e tempo (em meses) e que façam as requisições “/juros-simples.html” 
+e “/juros-composto.html”
+
+Um servlet chamado JurosSimplesServlet que responda a url “/juros-simples.html” 
+que mostre os dados enviados pelo formulário e o resultado final (valor futuro)
+
+Um servlet chamado JurosCompostoServlet que responda a url “/juros-composto.html” 
+que mostre os dados enviados pelo formulário e o resultado final (valor futuro)
+
+Referência: https://pt.wikipedia.org/wiki/Juro
+-->
+<html>
+    <head>
+        <title>Juros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Portal de cálculo de juros</h2>
+        <hr>
+        <h3><label for='name'>Nome:</label>
+        <input type='text' id='name' size='50' value='Natasha Yumi Nakayama de Almeida' disabled/>
+        <label for='matricula'>Matrícula:</label>
+        <input type='text' id='name' size='15' value='1290482012039' disabled/></h3>
+        <h3> <img src='Octocat.png' width = 3%> GitHub </h3>
+        <dl>
+            <dt><h4><a href='https://github.com/natashayumi'>GitHub/natashayumi</a></h4></dt>
+            <dd><a href='https://github.com/NatashaYumi/POO_Java/tree/main/Aula02HelloWorld'>Aula02HelloWorld</a></dd>
+            <dd><a href='https://github.com/NatashaYumi/POO_Java/tree/main/Aula03JavaEEServlets'>Aula03JavaEEServlets</a></dd>
+            <dd><a href='https://github.com/NatashaYumi/POO_Java/tree/main/ProjetoMathServlet3.2'>ProjetoMathServlet3.2</a></dd>
+        </dl>
+        <hr>
+        <h3>Juros Simples</h3>
+        <form action="juros-simples.html">
+            <table>
+                <tr>
+                    <td><label for='valor'> Valor (R$) </label></td>
+                    <td><input type="number" name="valor_presente" step="0.01" placeholder="Valor a ser calculado"></td>
+                </tr>
+                <tr>
+                    <td><label for='taxa'> Taxa (%) </label></td>
+                    <td><input type="number" name="taxa_juros" value="" placeholder="Taxa de juros"></td>
+                </tr>
+                <tr>
+                    <td><label for='tempo'> Tempo </label></td>
+                    <td><input type="number" name="numero_periodos" value="" placeholder="Quantidade de meses"></td>
+                </tr>
+                <tr>
+                <td><input type="submit" value="Calcular"/></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <h3>Juros Composto</h3>
+        <form action="juros-composto.html">
+             <table>
+                <tr>
+                    <td><label for='valor'> Valor (R$) </label></td>
+                    <td><input type="number" name="valor_presente" step="0.01" placeholder="Valor a ser calculado"></td>
+                </tr>
+                <tr>
+                    <td><label for='taxa'> Taxa (%) </label></td>
+                    <td><input type="number" name="taxa_juros" value="" placeholder="Taxa de juros"></td>
+                </tr>
+                <tr>
+                    <td><label for='tempo'> Tempo </label></td>
+                    <td><input type="number" name="numero_periodos" value="" placeholder="Quantidade de meses"></td>
+                </tr>
+                <tr>
+                <td><input type="submit" value="Calcular"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
