@@ -44,8 +44,8 @@
             <div style="color:red"> Erro: <%= errorMessage %> </div>
         <% } %>
         <hr>
-        <form action="multiplicationtable.jsp">
-            <input type="number" name="n" value="<%= n %>"/>
+             <form action="multiplicationtable.jsp">
+            <input type="number" name="n" value="10"/>
             <input type="submit" value="Gerar"/>
         </form>
     </body>
