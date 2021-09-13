@@ -15,7 +15,8 @@
     String mesSelecionado = "Janeiro";
     int count = 1;
         
-        mesSelecionado = String.valueOf(request.getParameter("pMesSelecionado"));
+    try {
+            mesSelecionado = String.valueOf(request.getParameter("pMesSelecionado"));
         ano = Integer.parseInt(request.getParameter("pAno"));
         if ("Janeiro".equals(mesSelecionado)){
             mes = 0;
@@ -53,7 +54,9 @@
         else if ("Dezembro".equals(mesSelecionado)){
             mes = 11;
         }      
-    
+    } catch (Exception e) {
+        
+    }
 %>
 
 <html>
