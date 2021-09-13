@@ -1,0 +1,21 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<hr/>
+<div style="text-align: center">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+</div>
+<div style="text-align: center">
+    Desenvolvido por FATEC Praia Grande
+</div>
+<div style="text-align: center">
+    <u><small>Natasha Yumi Nakayama de Almeida</small></u>
+</div>

@@ -1,0 +1,6 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h1>Diretivas JSP</h1>
+<a href="<%= request.getContextPath() %>/index.jsp">INÍCIO</a> |
+<a href="<%= request.getContextPath() %>/page1.jsp">PÁGINA 01</a>
+<hr/>
