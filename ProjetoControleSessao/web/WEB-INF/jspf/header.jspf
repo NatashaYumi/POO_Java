@@ -1,0 +1,55 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+ <link  rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+        crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+        crossorigin="anonymous">
+</script>
+<% String error = null;
+    if(request.getParameter("auth-login") != null){ 
+        try {
+            if (request.getParameter("auth-username").equals(null) || 
+                request.getParameter("auth-username").isEmpty() ||
+                request.getParameter("auth-password").equals(null) || 
+                request.getParameter("auth-password").isEmpty()){
+                error = "Usuário/Senha não pode ser nulo!";
+            } else {
+                String userName = request.getParameter("auth-username");
+                session.setAttribute("auth-username", userName);
+                response.sendRedirect(request.getRequestURI());
+            }
+        } catch (Exception e) {
+            error = "Falha na rotina de autenticação de usuário!";
+        }
+    } else if(request.getParameter("auth-logout") != null){
+       session.removeAttribute("auth-username");
+       session.removeAttribute("minhaLista");
+       response.sendRedirect(request.getRequestURI());
+       error = null;
+    }
+    String authUserName = (String) session.getAttribute("auth-username");
+%>
+
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+<h1>NatashaApp</h1>
+<form method="post" style="position: absolute; top: 10px; right: 10px">
+    <% if(authUserName != null){ %>
+    Bem vindo, <%= authUserName %>
+    <input type="submit" name="auth-logout" value="SAIR">
+    <% } %>
+</form>
+</div>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.jsp">Início 
+                <span class="sr-only">(Página atual)</span></a>
+            <a class="nav-item nav-link" href="about.jsp">Sobre</a>
+        </div>
+    </div>
+</nav><hr/>
+        
