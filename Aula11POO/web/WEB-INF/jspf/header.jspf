@@ -1,0 +1,8 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h1>Natasha Yumi</h1>
+<a href="index.jsp">Início</a> |
+<a href="data.jsp">Classe Data</a> |
+<a href="contatos.jsp">Contatos</a> |
+<a href="horario.jsp">Horário</a> 
+<hr/>
